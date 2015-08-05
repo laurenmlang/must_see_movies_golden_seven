@@ -35,10 +35,6 @@ Rails.application.routes.draw do
 # Delete MOVIES
  get('/delete_movie/:id', { :controller => 'movies', :action => 'delete' })
 
-# Route to ACTORS
-
-  get("/actors", {:controller =>"actors", :action => "index"})
-  get("/actors/:id", {:controller =>"actors", :action => "show"})
 
 # ACTORS:  
 # Create ACTORS
