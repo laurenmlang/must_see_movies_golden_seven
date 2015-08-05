@@ -1,10 +1,10 @@
 class ActorsController < ApplicationController
 
-	def show
+	def index
 		@a_list = Actor.all
 	end
 
-	def detail
+	def show
 		@id = params["id"]
 		@actor = Actor.find_by(@id)
 

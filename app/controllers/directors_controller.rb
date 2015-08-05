@@ -1,10 +1,10 @@
 class DirectorsController < ApplicationController
 
-	def show
+	def index
 		@d_list = Director.all
 	end
 
-	def detail
+	def show
 		@id = params[:id]
 		@director = Director.find_by(@id)
 
