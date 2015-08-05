@@ -2,6 +2,8 @@
 <h1> Directors </h1>
 </div>
 
+<p><a href="/directors/new" class="btn btn-primary">Create a New Director</a></p>
+
 <table class = "table table-hover">
  <tr>
   <th> Name </th>
@@ -21,6 +23,9 @@
 <td><%=truncate(list.bio)%></td>
 <td><%=list.dob%></td>
 <td><img src="<%=list.image_url%>" width = "80"></td>
+<td><a href="/directors/<%=list.id%>">View Detail</a></td>
+<td><a href="/directors/<%=list.id%>/edit">Update Director</a></td>
+<td><a href="/delete_director/<%=list.id%>">Delete</a></td>
 </tr>
 
 <% end %>
